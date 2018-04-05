@@ -1,0 +1,18 @@
+//============================================================================
+//  #Site Footer
+//==============================================================================
+.site-footer {
+  clear: both;
+  padding: $gutter 0;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.footer__credit {
+  @include opacity(.6);
+}
+
+.social-icons__link {
+  padding: 15px;
+}
