@@ -45,9 +45,12 @@ class Scramble extends Component {
         that.props.setTimeout(next, 2000)
       })
       fx2.setText(that.state.nouns[that.state.counter])
-        that.setState({
-          counter: (that.state.counter + 1) % that.state.verbs.length
-        })
+        // make sure component is mounted.
+        if (that.refs.ScrambleRef) {
+          that.setState({
+            counter: (that.state.counter + 1) % that.state.verbs.length
+          })
+        }
     }
 
     next()
@@ -57,7 +60,7 @@ class Scramble extends Component {
     parallaxis()
 
     return (
-      <section className="scramble-headline featured-content section section--scramble-headline py4">
+      <section ref="ScrambleRef" className="scramble-headline featured-content section section--scramble-headline py4">
         <div className="wrapper section--wrapper">
 
           <h2
