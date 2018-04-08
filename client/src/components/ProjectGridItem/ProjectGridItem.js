@@ -21,6 +21,16 @@ class ProjectGridItem extends Component {
    }
 
   render() {
+    let websiteLink = <Link to={ this.props.url } target="_blank">Website </Link>
+    if (this.props.url === "") {
+      websiteLink = ""
+    }
+
+    let githubLink = <Link to={ this.props.github } target="_blank"> Github</Link>
+    if (this.props.github === "") {
+      githubLink = ""
+    }
+
     return (
       <div className="grid__item one-whole work-item">
         <div className="portfolio-item">
@@ -43,8 +53,8 @@ class ProjectGridItem extends Component {
             <Modal.Body>
               <h5>Deets</h5>
               <div>{ this.props.description }</div>
-              <Link to={ this.props.url } target="_blank">Website </Link> |
-              <Link to={ this.props.github } target="_blank"> Github</Link>
+              { websiteLink } |
+              { githubLink }
 
             </Modal.Body>
             <Modal.Footer>
