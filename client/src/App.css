@@ -5457,3 +5457,6 @@ label.error {
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1.4; }
+
+.bio-text a {
+  border-bottom: 5px solid; }
