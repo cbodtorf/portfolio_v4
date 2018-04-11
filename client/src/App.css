@@ -4285,11 +4285,17 @@ iframe {
   transition: transform .3s ease-out; }
 
 .modal.in .modal-dialog {
-  transform: translate(0, 0); }
+  transform: translate(0, 100px); }
 
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto; }
+
+.project-list {
+  transition: transform 1s ease; }
+
+.modal-open .project-list {
+  transform: translateX(-100%); }
 
 .modal-dialog {
   position: relative;
@@ -4308,8 +4314,7 @@ iframe {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1040;
-  background-color: #000; }
+  z-index: 1040; }
 
 .modal-backdrop.fade {
   opacity: 0;
@@ -4360,6 +4365,12 @@ iframe {
   height: 50px;
   overflow: scroll; }
 
+.modal-container {
+  position: relative; }
+
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute; }
+
 @media (min-width: 768px) {
   .modal-dialog {
     width: 600px;
@@ -4397,6 +4408,8 @@ a:focus {
   background-size: 200%;
   background-image: none;
   background-image: linear-gradient(45deg, #1a1427 0%, #1a1427 35%, #1f6a6d 66%, #00c9d3 100%);
+  border-color: #1f6a6d;
+  color: #1a1427;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-animation: glow 3s linear infinite;
@@ -5119,6 +5132,17 @@ label.error {
 
 .social-icons__link {
   padding: 15px; }
+  .social-icons__link:hover {
+    color: #ffffff; }
+
+.footer-logo {
+  filter: drop-shadow(10px -12px 0px #1a1427);
+  position: relative;
+  top: -48px;
+  width: 50px; }
+
+.page-background {
+  padding-bottom: 200px; }
 
 /*============================================================================
   # Landing Page -- Screen Prints

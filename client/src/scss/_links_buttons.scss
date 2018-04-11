@@ -14,7 +14,9 @@ a:hover,
 a:focus {
   background-size: 200%;
   background-image: none;
-  background-image: linear-gradient(45deg, #1a1427 0%, #1a1427 35%, #1f6a6d 66%, #00c9d3 100%);
+  background-image: linear-gradient(45deg, $colorLink 0%, $colorLink 35%, $colorMainAccent 66%, #00c9d3 100%);
+  border-color: $colorMainAccent;
+  color: $colorLink;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-animation: glow 3s linear infinite;

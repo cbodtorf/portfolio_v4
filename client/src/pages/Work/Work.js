@@ -27,7 +27,7 @@ class Work extends Component {
     })
 
     return (
-      <div className="page-background">
+      <div className="page-background modal-container">
         <Container fluid>
           <section id="portfolio" className="page--portfolio">
             <div className="container">
@@ -37,7 +37,7 @@ class Work extends Component {
                     </div>
                 </div>
                 <div className="grid-uniform">
-                  <div className="nine-tenths push--one-tenth">
+                  <div className="project-list nine-tenths push--one-tenth">
                     { projects }
                   </div>
                 </div>

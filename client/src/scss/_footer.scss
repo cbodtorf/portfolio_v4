@@ -15,4 +15,19 @@
 
 .social-icons__link {
   padding: 15px;
+
+  &:hover {
+    color: $colorSecondaryAccent;
+  }
+}
+
+.footer-logo {
+  filter: drop-shadow(10px -12px 0px $colorPrimary);
+  position: relative;
+  top: -48px;
+  width: 50px;
+}
+
+.page-background {
+  padding-bottom: 200px;
 }

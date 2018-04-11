@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import TechIcons from "../ProjectGridItem/TechIcons"
+import logo from "../../images/b.svg"
 
 class Footer extends Component {
 
@@ -27,9 +28,8 @@ class Footer extends Component {
                 <p>© 2018 <a href="/" className=" color--primary-overlay">Bodtorf</a></p>
                 <hr className="rule   bg--secondary-accent  m0 my2 text-align--left" />
               </div>
-              <div className="grid__item lg--one-quarter">
-              </div>
-              <div className="grid__item lg--one-quarter">
+              <div className="grid__item lg--one-half text-align--center">
+                <img src={ logo } className="footer-logo img img-responsive img-centered" alt="site logo" />
               </div>
               <div className="grid__item lg--one-quarter text-align--right">
                 <ul className="social-icons social-icons align--middle list-reset inline-block inline-list">

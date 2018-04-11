@@ -33,8 +33,9 @@ class Contact extends Component {
   };
 
   render() {
+
     return (
-      <div className="contact-background">
+      <div className="page-background">
         <section id="contact">
             <div className="container">
                 <div className="row">
@@ -42,7 +43,7 @@ class Contact extends Component {
                         <h2 className="vericaltext">Drop a Note</h2>
                     </div>
                 </div>
-                <div className="grid__uniform">
+                <div className="grid-uniform">
                   <div className="grid__item push--one-tenth nine-tenths">
                     <form name="sentMessage" id="contactForm" noValidate>
                         <div className="row control-group">
@@ -54,8 +55,8 @@ class Contact extends Component {
                                 className="form-control full--w input-underline input-underline--primary"
                                 placeholder="Name"
                                 name="name"
-                                value={this.state.name}
-                                onChange={this.handleInputChange}
+                                value={ this.state.name }
+                                onChange={ this.handleInputChange }
                                 required data-validation-required-message="Please enter your name."
                                 />
                                 <p className="help-block text-danger"></p>

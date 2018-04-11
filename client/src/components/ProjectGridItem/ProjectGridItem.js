@@ -21,6 +21,7 @@ class ProjectGridItem extends Component {
    }
 
   render() {
+    console.log("this", this)
     let websiteLink = <Link to={ this.props.url } target="_blank">Website </Link>
     if (this.props.url === "") {
       websiteLink = ""
@@ -46,7 +47,7 @@ class ProjectGridItem extends Component {
                 </div>
                 {/* <img src={this.props.img_src} className="img-responsive img-centered" alt={this.props.name} /> */}
             </div>
-            <Modal show={ this.state.showModal } onHide={ this.close }>
+            <Modal show={ this.state.showModal } onHide={ this.close } container={ this }>
             <Modal.Header>
               <Modal.Title>{ this.props.name }</Modal.Title>
             </Modal.Header>
