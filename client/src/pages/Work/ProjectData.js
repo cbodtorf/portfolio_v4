@@ -17,6 +17,7 @@ import raven_mockup from "../../images/raven_mockup.jpg"
 import dash from "../../images/dash-logo.jpg"
 import dash_mockup from "../../images/dash_mockup.jpg"
 
+
 const ProjectData = [
   {
     name: "Bamboo Juices",
