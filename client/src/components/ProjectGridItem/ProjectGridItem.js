@@ -64,7 +64,7 @@ class ProjectGridItem extends Component {
 
         <Details show={ this.state.showModal } onHide={ this.close } container={ this }>
           <Details.Title>
-            { this.props.name }
+            <a href={ this.props.url.length > 1 ? this.props.url : "#"} >{ this.props.name }</a>
           </Details.Title>
           <Details.Body>
             <div><img src={ this.props.mockup_src }></img></div>

@@ -52,7 +52,8 @@ const ProjectData = [
     tech: ["javascript","css3","sass","shopify","html5"],
     url: "https://ravenroxanne.com/pages/botanical-series-screen-prints",
     description: <p>
-      A Front-end ecommerce project utilizing some fun anitmations.
+      A Front-end ecommerce project utilizing some fun anitmations. The artist was releasing a series of screen prints and we wanted to detail the process of
+      deconstructing a painting into layers of color for the screen printer.
     </p>,
     mockup_src: raven_mockup,
   },
@@ -86,7 +87,7 @@ const ProjectData = [
     tech: ["javascript","css3","sass","shopify","html5"],
     url: "https://sarapittmanstudio.com/",
     description: <p>
-      A Front-end ecommerce project.
+      A Front-end ecommerce project. Some fun code was implemented to analyze images used throughout the site and create a color pallate displayed at the top of the site.
     </p>,
     mockup_src: sPittman_mockup,
   },
@@ -96,7 +97,9 @@ const ProjectData = [
     tech: ["javascript","css3","sass","shopify","html5","react","rails","ruby","heroku"],
     url: "",
     description: <p>
-      A Front-end ecommerce project. With a backend Delivery App.
+      A Front-end ecommerce project for a brick and mortor Patisserie franchise testing out nationwide shipping from their Headquarters.
+      The site utilizes an optimized version of our delivery app Dash. A Custom Store locator was created calling in franchise data, and integrating with
+      local delivery/pickup apps OLO and ToGoOrder.
     </p>,
     mockup_src: gigis_mockup,
   },
@@ -106,7 +109,8 @@ const ProjectData = [
     tech: ["javascript","css3","sass","shopify","html5"],
     url: "https://www.lesetta.com/",
     description: <p>
-      A Front-end ecommerce project.
+      A Front-end project built for the curation of artisnal goods and accessories from across the globe.
+      The informational site has a fun animation on the landing page, and was built to support the future prospects of eccommerce as the entity grows.
     </p>,
     mockup_src: lesetta_mockup,
   }
