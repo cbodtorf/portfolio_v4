@@ -8,7 +8,7 @@
 }
 
 .modal-open {
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .modal {
@@ -42,8 +42,8 @@
   transition: transform 1s ease;
 }
 
-.modal-open .project-list {
-  transform: translateX(-100%);
+.modal-open .work-item {
+  transform: translateX(-120%);
 }
 
 .modal-dialog {

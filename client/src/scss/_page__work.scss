@@ -12,6 +12,7 @@
 .work-item {
   border-top: 2px solid;
   padding-right: 35px;
+  transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
 .item-index {
@@ -107,4 +108,44 @@
 
 .viewproject:hover {
   opacity: 1;
+}
+
+.details {
+  display: none;
+  transition: all ease .5s;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.show {
+    display: block;
+    padding-bottom: 200px;
+    position: absolute;
+    overflow-y: scroll;
+    right: 0;
+    top: 0;
+  }
+}
+
+.details-close-btn {
+  position: fixed;
+  right: 15px;
+  top: 150px;
+  border: 2px solid;
+  border-radius: 50px;
+  box-shadow: -5px 3px 0px rgba(0,0,0,1);
+  transition: all ease .5s;
+
+  &:hover {
+    box-shadow: 0px 0px 0px rgba(0,0,0,1);
+  }
+}
+
+.details-project-title {
+  letter-spacing: 25px;
+  transform: rotate3d(1, 1, 1, -31deg);
+  top: 35px;
+  position: relative;
+  text-shadow: 18px 27px 0px rgba(0,0,0,0.1);
 }

@@ -18,10 +18,12 @@ class Work extends Component {
           index={ randUnicode }
           name={ project.name }
           img_src={ project.img_src }
+          mockup_src={ project.mockup_src }
           tech={ project.tech }
           url={ project.url ? project.url : "" }
           github={ project.github ? project.github : "" }
           description={ project.description }
+          unicode={ randUnicode }
         />
       )
     })
